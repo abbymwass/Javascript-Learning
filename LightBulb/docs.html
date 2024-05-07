@@ -1,0 +1,43 @@
+<html>
+<head>
+    <style type="text/css">
+        .on{
+            display: inline-block;
+            margin: 3px;
+            color: black;
+            background-color: lightyellow;
+            padding: 10px;
+            border: none;
+        }
+        .off{
+            display: inline-block;
+            margin: 3px;
+            color: black;
+            background-color: lightgrey;
+            padding: 10px;
+            border: none;
+        }
+        .content{
+            display: inline-block;
+            margin: 3px;
+            color: black;
+            background-color: lightblue;
+            padding: 10px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<h2>Javascrpit is bold</h2>
+<p>in most cases,javascript lies on the behold of data base</p>
+<img id="demo" src="off.jpg" width="500" height="500">
+ <button class="on" onclick="document.getElementById('demo').src='on.jpg'">Turn on the light</button>
+ <button class="off" onclick="document.getElementById('demo').src='off.jpg'">Turn off the light</button><br>
+ <p>The button below changes the content of the paragraph</p>
+
+ <button class="content" onclick="document.getElementById('p1').innerHTML='I am changed'">change content</button>
+<p id="p1">to atticulate in this light</p>
+
+
+</body>
+</html>
