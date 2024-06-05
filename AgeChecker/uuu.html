@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>Age Checker</h1>
+<input type="text" name="age" id="age">
+<button onclick="checkAge()">Check Age</button>
+<script>
+	function checkAge() {
+		let age = document.getElementById('age').value
+	if (age<13) {
+		alert ("you are a child")
+	}else if(age>=13 && age<18){
+		alert ("you are a teen")
+	}else if(age>=18 && age<22){
+		alert ("you are a young adult")
+	}else if( age>=22 && age<35){
+		alert("you are an adult")
+	}else if(age>=35&&age<=50){
+		alert("you are a mature adult")
+	}else{
+		alert("you are an old person")
+	}
+	}
+</script>
+	
+</body>
+</html>
